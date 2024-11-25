@@ -1,0 +1,12 @@
+[
+  {
+    "modid": "espmod",
+    "name": "ESP Mod",
+    "description": "Un mod simple qui affiche des boîtes autour des entités.",
+    "version": "1.0",
+    "mcversion": "1.12.2",
+    "authorList": ["build"],
+    "url": "",
+    "credits": "Merci à Forge et la communauté Minecraft."
+  }
+]

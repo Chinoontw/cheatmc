@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.minecraftforge.net' }
+        mavenCentral()
+    }
+    dependencies {
+        // Utilisez la version correcte de ForgeGradle pour Minecraft 1.12.2
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+
+version = "1.0"
+group = "com.example.mod"
+archivesBaseName = "espmod"
+
+minecraft {
+    version = "1.12.2-14.23.5.2860"  // Version de Minecraft et Forge
+    runDir = "run"
+    mappings channel: 'snapshot', version: '20201030-1.12.2'  // Mappings pour 1.12.2
+}
+
+dependencies {
+    // Ajoutez vos dépendances ici si nécessaire
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://libraries.minecraft.net' }
+}
+
+mod {
+    modId = "espmod"
+    displayName = "ESP Mod"
+    description = "Un mod simple qui affiche des boîtes autour des entités."
+    version = "1.0"
+    mcversion = "1.12.2"
+    authorList = ["build"]
+    url = ""
+    credits = "Merci à Forge et la communauté Minecraft."
+}
